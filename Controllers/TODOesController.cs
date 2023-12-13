@@ -123,11 +123,22 @@ namespace Zetix.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
+                var TODO = new TODO
+                {
+                    Id = tODO.Id,
+                    Title = tODO.Title,
+                    Description = tODO.Description,
+                    Author = tODO.Author,
+                    IsDone = tODO.IsDone,
+                    Term = tODO.Term,
+                    Priority = tODO.Priority
+                };
+
                 try
                 {
-                    _context.Update(tODO);
+                    _context.Update(TODO);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -142,7 +153,7 @@ namespace Zetix.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
-            }
+            //}
             return View(tODO);
         }
 
