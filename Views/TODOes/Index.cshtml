@@ -18,19 +18,19 @@
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.Title)
+                    Название
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Description)
+                    Описание
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Priority)
+                    Приоритет
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.IsDone)
+                    Статус
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Term)
+                    Дата выполнения
                 </th>
                 <th></th>
             </tr>
@@ -55,9 +55,9 @@
                         @Html.DisplayFor(modelItem => item.Term)
                     </td>
                     <td>
-                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Редактировать</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Подробнее</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
                     </td>
                 </tr>
             }

@@ -30,15 +30,17 @@ namespace Zetix.Controllers
             if (user != null)
             {
                 var userTodos = _context.TODOes.Where(post => post.Author.Id == user.Id).ToList();
-
+                if (userTodos == null || userTodos.Count == 0)
+                {
+                    return View(new List<TODO>());
+                }
                 return userTodos.Any() ?
                            View(userTodos) :
                            Problem("Набор сущностей 'ApplicationContext.TODO' пуст для данного пользователя.");
             }
             else
             {
-                // Обработка ситуации, когда пользователь не найден по указанной электронной почте.
-                return View();
+                return View(new List<TODO>());
             }
         }
 
