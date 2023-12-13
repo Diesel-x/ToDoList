@@ -12483,31 +12483,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Дияз\\.nuget\\packages\\": {},
-    "D:\\Programs\\VS_Components\\NuGetPackages": {}
+    "C:\\Users\\diyaz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\To_Do_List\\Zetix\\Zetix.csproj",
+      "projectUniqueName": "D:\\Repositories\\ToDoList\\Zetix.csproj",
       "projectName": "Zetix",
-      "projectPath": "D:\\Projects\\To_Do_List\\Zetix\\Zetix.csproj",
-      "packagesPath": "C:\\Users\\Дияз\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\To_Do_List\\Zetix\\obj\\",
+      "projectPath": "D:\\Repositories\\ToDoList\\Zetix.csproj",
+      "packagesPath": "C:\\Users\\diyaz\\.nuget\\packages\\",
+      "outputPath": "D:\\Repositories\\ToDoList\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\Programs\\VS_Components\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Дияз\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\diyaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -12584,7 +12579,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

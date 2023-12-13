@@ -82,8 +82,9 @@ namespace Zetix.Controllers
                 Author = await _context.Users.SingleAsync(user => user.Email == User.Identity.Name),
                 IsDone = tODO.IsDone,
                 Term = tODO.Term,
-                Priority = "Yes"
+                Priority = tODO.Priority
             };
+            Console.WriteLine(tODO.Term);
             //if (ModelState.IsValid)
             //{
                 _context.Add(TODO);
