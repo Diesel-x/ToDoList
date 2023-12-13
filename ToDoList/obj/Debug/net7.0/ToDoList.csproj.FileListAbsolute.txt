@@ -1,8 +1,0 @@
-D:\Projects\ToDoList\ToDoList\obj\Debug\net7.0\ToDoList.csproj.AssemblyReference.cache
-D:\Projects\ToDoList\ToDoList\obj\Debug\net7.0\ToDoList.GeneratedMSBuildEditorConfig.editorconfig
-D:\Projects\ToDoList\ToDoList\obj\Debug\net7.0\ToDoList.AssemblyInfoInputs.cache
-D:\Projects\ToDoList\ToDoList\obj\Debug\net7.0\ToDoList.AssemblyInfo.cs
-D:\Projects\ToDoList\ToDoList\obj\Debug\net7.0\ToDoList.csproj.CoreCompileInputs.cache
-D:\Projects\ToDoList\ToDoList\obj\Debug\net7.0\ToDoList.MvcApplicationPartsAssemblyInfo.cache
-D:\Projects\ToDoList\ToDoList\obj\Debug\net7.0\ToDoList.RazorAssemblyInfo.cache
-D:\Projects\ToDoList\ToDoList\obj\Debug\net7.0\ToDoList.RazorAssemblyInfo.cs
