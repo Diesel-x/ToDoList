@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Zetix.props" />
+</Project>

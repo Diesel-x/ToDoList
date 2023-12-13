@@ -1,0 +1,33 @@
+﻿@model ToDoList.Data.Post
+
+@{
+    ViewData["Title"] = "Создать пост";
+}
+
+<div>
+    <a asp-action="Index" asp-controller="Home">Домой</a>
+</div>
+
+<h1>Create post</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @using (Html.BeginForm("Create", "Posts", FormMethod.Post, new {enctype="multipart/form-data"}))
+{
+            <label for="Category">Категория</label>
+            <select class="form-control mb-3" name="Category" asp-items="@(ViewBag.Categories)">
+            </select>
+
+            <label for="file">Файл</label>
+            <input required name="file" type="file" class="form-control" />
+
+            <div class="form-group mt-3">
+                <input type="submit" value="Создать" class="btn-lg btn w-100 btn-primary" />
+            </div>
+}
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

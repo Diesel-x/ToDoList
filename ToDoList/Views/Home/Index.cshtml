@@ -1,0 +1,22 @@
+﻿@model IEnumerable<ToDoList.Data.Post>
+
+@{
+    ViewData["Title"] = "Посты";
+}
+
+<div class="d-flex align-items-center flex-column">
+    <div class="d-flex justify-content-between container-fluid align-items-center" style="max-width: 45rem;">
+        <h1 class="display-6">Последние посты:</h1>
+        <a asp-controller="Home" asp-action="IndexAll" class="btn btn-primary">Все посты➡️</a>
+    </div>
+    @await Html.PartialAsync("_PostsListPartial", Model)
+</div>
+
+@section Scripts
+{
+    <script src="@Url.Content("~/js/Comments.js")"></script>
+    @if (User.IsInRole("Administrator"))
+    {
+        <script src="@Url.Content("~/js/Admin.js")"></script>
+    }
+}

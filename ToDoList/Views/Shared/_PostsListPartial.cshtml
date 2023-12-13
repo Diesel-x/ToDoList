@@ -1,0 +1,61 @@
+﻿@model IEnumerable<ToDoList.Data.Post>
+
+@if (Model.Any())
+{
+    @foreach (var post in Model)
+    {
+        <div class="card m-3 container" style="max-width: 45rem;padding-left:unset;padding-right:unset">
+            <div class="card-header">
+                <div style="height:24px;" class="d-flex justify-content-between">
+                    <p>
+                        @post.Author.Email @(post.Category.ID == 1 ? "" : "➖" + post.Category.Name)
+                    </p>
+                    <div>
+                        <a asp-controller="Posts" asp-action="Details" asp-route-id=@post.Id class="link ms-3 me-3">Перейти к посту</a>
+                        @if (User.IsInRole("Administrator"))
+                        {
+                            <button class="btn btn-danger btn-sm" data-btndelpost=@post.Id>Удалить</button>
+                        }
+                    </div>
+                </div>
+            </div>
+            <img class='@(post.Comments.Any() || User.Identity.IsAuthenticated ? "border-start border-end" : "card-img-bottom")' src=@(new String(("/images/" + @post.FilePath).Take(post.FilePath.Length + 8).ToArray())) />
+            @if (post.Comments.Any())
+            {
+                <div class="card-footer">          
+                    <h5 class="card-title">Комментарии</h5>
+                    <hr />
+
+                    @foreach (var comment in post.Comments.Take(3))
+                    {
+                        <div class="container">
+                            <h5>@comment.Author?.Email</h5>
+                            <p>@comment.Text</p>
+                            @if (User.IsInRole("Administrator"))
+                            {
+                                <button class="btn btn-danger btn-sm" data-btndelcomment=@comment.Id>Удалить</button>
+                            }
+                            <hr />
+                        </div>
+                    }
+
+                    @if (post.Comments.Count() > 3)
+                    {
+                        <a asp-controller="Posts" asp-action="Details" asp-route-id=@post.Id class="btn btn-sm btn-outline-secondary ms-3">Показать все</a>
+                    }
+                </div>
+            }
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="input-group p-3">
+                    <input data-inppostid="@post.Id" type="text" class="form-control" placeholder="Комментарий">
+                    <button data-btnpostid="@post.Id" class="btn btn-primary input-group-append" type="button">Комментировать</button>
+                </div>
+            }
+        </div>
+    }
+}
+else
+{
+    <h3>Нет постов</h3>
+}

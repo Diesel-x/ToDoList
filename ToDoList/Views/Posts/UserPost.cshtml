@@ -1,0 +1,19 @@
+﻿@model IEnumerable<ToDoList.Data.Post>
+
+@{
+    ViewData["Title"] = "Ваши посты";
+}
+
+<div class="d-flex align-items-center flex-column">
+    <h1 class="display-6">Ваши посты:</h1>
+    @await Html.PartialAsync("_PostsListPartial", Model)
+</div>
+
+@section Scripts
+{
+    <script src="@Url.Content("~/js/Comments.js")"></script>
+    @if (User.IsInRole("Administrator"))
+    {
+        <script src="@Url.Content("~/js/Admin.js")"></script>
+    }
+}
