@@ -244,8 +244,8 @@ namespace Zetix.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("Term")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<DateOnly>("Term")
+                        .HasColumnType("date");
 
                     b.Property<string>("Title")
                         .IsRequired()

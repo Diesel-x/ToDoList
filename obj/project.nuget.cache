@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vo0Rmwa9AnXhuPyXNpydC0d79NOI96Ho29i9Gti3e+uFqfyQPmNHcEdZ/nNxogBZH9DBUWARgK3AlzBnhHun2Q==",
+  "dgSpecHash": "hhxAAKg9unH7P3RAqVprormYpaJwoSuhhDS7SPqP4xeRiS5KgVR6W3ejQFWAMyXa4zv4CO7ndDvBvC+BZHaQQQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\ToDoList\\Zetix.csproj",
+  "projectFilePath": "D:\\Projects\\ToDoList\\ToDoList.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Дияз\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Дияз\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

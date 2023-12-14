@@ -11,7 +11,7 @@ namespace ToDoList.Data
         public string Title { get; set; }
         public string Description { get; set; }
         [DataType(DataType.Date)]
-        public DateTime Term { get; set; }
+        public DateOnly Term { get; set; }
         public string Priority { get; set; }
         public bool IsDone { get; set; }
     }

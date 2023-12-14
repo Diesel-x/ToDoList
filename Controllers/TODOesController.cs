@@ -118,7 +118,7 @@ namespace Zetix.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(long id, [Bind("Id,Title,Description,Priority,IsDone")] TODO tODO)
+        public async Task<IActionResult> Edit(long id, [Bind("Id,Title,Description,Term,Priority,IsDone")] TODO tODO)
         {
             if (id != tODO.Id)
             {

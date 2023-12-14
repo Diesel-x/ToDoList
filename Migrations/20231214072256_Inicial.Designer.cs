@@ -12,8 +12,8 @@ using ToDoList.Data;
 namespace Zetix.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20231214070114_inicial")]
-    partial class inicial
+    [Migration("20231214072256_Inicial")]
+    partial class Inicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -247,8 +247,8 @@ namespace Zetix.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("Term")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<DateOnly>("Term")
+                        .HasColumnType("date");
 
                     b.Property<string>("Title")
                         .IsRequired()

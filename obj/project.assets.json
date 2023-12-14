@@ -12489,9 +12489,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\ToDoList\\Zetix.csproj",
-      "projectName": "Zetix",
-      "projectPath": "D:\\Projects\\ToDoList\\Zetix.csproj",
+      "projectUniqueName": "D:\\Projects\\ToDoList\\ToDoList.csproj",
+      "projectName": "ToDoList",
+      "projectPath": "D:\\Projects\\ToDoList\\ToDoList.csproj",
       "packagesPath": "C:\\Users\\Дияз\\.nuget\\packages\\",
       "outputPath": "D:\\Projects\\ToDoList\\obj\\",
       "projectStyle": "PackageReference",

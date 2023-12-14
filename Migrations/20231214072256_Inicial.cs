@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Zetix.Migrations
 {
     /// <inheritdoc />
-    public partial class inicial : Migration
+    public partial class Inicial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -166,7 +166,7 @@ namespace Zetix.Migrations
                     AuthorId = table.Column<string>(type: "text", nullable: true),
                     Title = table.Column<string>(type: "text", nullable: false),
                     Description = table.Column<string>(type: "text", nullable: false),
-                    Term = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    Term = table.Column<DateOnly>(type: "date", nullable: false),
                     Priority = table.Column<string>(type: "text", nullable: false),
                     IsDone = table.Column<bool>(type: "boolean", nullable: false)
                 },
