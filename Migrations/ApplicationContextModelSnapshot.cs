@@ -222,77 +222,6 @@ namespace Zetix.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("ToDoList.Data.Category", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Categories");
-                });
-
-            modelBuilder.Entity("ToDoList.Data.Comment", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("AuthorId")
-                        .HasColumnType("text");
-
-                    b.Property<int?>("PostId")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Text")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AuthorId");
-
-                    b.HasIndex("PostId");
-
-                    b.ToTable("Comments");
-                });
-
-            modelBuilder.Entity("ToDoList.Data.Post", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("AuthorId")
-                        .HasColumnType("text");
-
-                    b.Property<int>("CategoryInfoKey")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("FilePath")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AuthorId");
-
-                    b.HasIndex("CategoryInfoKey");
-
-                    b.ToTable("Posts");
-                });
-
             modelBuilder.Entity("ToDoList.Data.TODO", b =>
                 {
                     b.Property<long>("Id")
@@ -380,36 +309,6 @@ namespace Zetix.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ToDoList.Data.Comment", b =>
-                {
-                    b.HasOne("ToDoList.Areas.Identity.Data.User", "Author")
-                        .WithMany()
-                        .HasForeignKey("AuthorId");
-
-                    b.HasOne("ToDoList.Data.Post", null)
-                        .WithMany("Comments")
-                        .HasForeignKey("PostId");
-
-                    b.Navigation("Author");
-                });
-
-            modelBuilder.Entity("ToDoList.Data.Post", b =>
-                {
-                    b.HasOne("ToDoList.Areas.Identity.Data.User", "Author")
-                        .WithMany()
-                        .HasForeignKey("AuthorId");
-
-                    b.HasOne("ToDoList.Data.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryInfoKey")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Author");
-
-                    b.Navigation("Category");
-                });
-
             modelBuilder.Entity("ToDoList.Data.TODO", b =>
                 {
                     b.HasOne("ToDoList.Areas.Identity.Data.User", "Author")
@@ -417,11 +316,6 @@ namespace Zetix.Migrations
                         .HasForeignKey("AuthorId");
 
                     b.Navigation("Author");
-                });
-
-            modelBuilder.Entity("ToDoList.Data.Post", b =>
-                {
-                    b.Navigation("Comments");
                 });
 #pragma warning restore 612, 618
         }

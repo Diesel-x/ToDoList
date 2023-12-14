@@ -19,12 +19,12 @@
             </div>
             <div class="form-group">
                 <label class="control-label">Описание</label>
-                <input asp-for="Description" class="form-control" />
+                <textarea asp-for="Description" class="form-control"></textarea>
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label class="control-label">Дата выполнения</label>
-                <input asp-for="Term" type="date" id="datepicker" class="form-control" name="datepicker">
+                <input asp-for="Term" type="date" data-type="date" id="datepicker" class="form-control" name="datepicker">
                 <span asp-validation-for="Term" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -38,11 +38,11 @@
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input form-control" asp-for="IsDone " /> @Html.DisplayNameFor(model => model.IsDone)
+                    <input class="form-check-input form-control" asp-for="IsDone " Выполнен/> 
                 </label>
             </div>
             <div class="form-group">
-                <input type="submit" value="Создать заметку" class="btn btn-primary" />
+                <input type="submit" value="Сохранить" class="btn btn-primary" />
             </div>
         </form>
     </div>

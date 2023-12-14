@@ -20,9 +20,9 @@
                 <th>
                     Название
                 </th>
-                <th>
+@*                <th>
                     Описание
-                </th>
+                </th>*@
                 <th>
                     Приоритет
                 </th>
@@ -42,9 +42,9 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.Title)
                     </td>
-                    <td>
+@*                    <td>
                         @Html.DisplayFor(modelItem => item.Description)
-                    </td>
+                    </td>*@
                     <td>
                         @Html.DisplayFor(modelItem => item.Priority)
                     </td>
@@ -55,9 +55,9 @@
                         @Html.DisplayFor(modelItem => item.Term)
                     </td>
                     <td>
-                        <a asp-action="Edit" asp-route-id="@item.Id">Редактировать</a> |
-                        <a asp-action="Details" asp-route-id="@item.Id">Подробнее</a> |
-                        <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Подробнее</a> |
+@*                        <a asp-action="Details" asp-route-id="@item.Id">Подробнее</a> |
+*@                        <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
                     </td>
                 </tr>
             }

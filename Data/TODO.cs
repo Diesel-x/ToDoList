@@ -11,7 +11,6 @@ namespace ToDoList.Data
         public string Title { get; set; }
         public string Description { get; set; }
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd'/'MM'/'yyyy}", ApplyFormatInEditMode = true)]
         public DateTime Term { get; set; }
         public string Priority { get; set; }
         public bool IsDone { get; set; }
