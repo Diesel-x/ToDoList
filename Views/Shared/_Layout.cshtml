@@ -17,9 +17,10 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow p-0">
-            <div class="container-fluid">
+            <div class="container-fluid" >
                 <a class="navbar-brand d-flex align-items-center" asp-area="" asp-controller="TODOes" asp-action="Index">
-                    <p style="font-size: 29px; color:green;">ToDoList</p>
+                    <img src="~/images/1662983369336_d3dc29598cda6f5ee38975d9335e8b93.png" height="50px" />
+                    <p style="font-size: 29px; color:cornflowerblue;" class="fw-bold">ToDoList</p>
                 </a>
                 <div class="d-flex align-items-center">
                     @if (SignInManager.IsSignedIn(User))
@@ -38,10 +39,10 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+@*    <footer class="border-top footer text-muted">
         <div class="container">
         </div>
-    </footer>
+    </footer>*@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

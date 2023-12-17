@@ -14,41 +14,45 @@
             <div class="form-group">
                 <label class="control-label">Название</label>
                 <input asp-for="Title" class="form-control" />
-                <span asp-validation-for="Title" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label class="control-label">Описание</label>
-                <textarea asp-for="Description" class="form-control"></textarea>
-                <span asp-validation-for="Description" class="text-danger"></span>
+                <textarea asp-for="Description" maxlength="200" style="height: 150px;" class="form-control"></textarea>
             </div>
             <div class="form-group">
                 <label class="control-label">Дата выполнения</label>
-                <input asp-for="Term" type="date" id="datepicker" class="form-control" min="@DateTime.Now">
-                <span asp-validation-for="Term" class="text-danger"></span>
+                <input asp-for="Term" type="date" value="Term" id="datepicker" class="form-control">
             </div>
             <div class="form-group">
                 <label class="control-label">Приоритет</label>
-                <select asp-for="Priority" class="form-control" >
+                <select asp-for="Priority" class="form-control">
                     <option value="Высокий">Высокий</option>
                     <option value="Средний">Средний</option>
                     <option value="Низкий">Низкий</option>
                 </select>
-                <span asp-validation-for="Priority" class="text-danger"></span>
             </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input form-control" asp-for="IsDone " /> Выполнено
+            <div class="form-group mt-2">
+                Выполнено:
+                <label class="control-label">
+                    <input class="form-check-input form-control" asp-for="IsDone " />
                 </label>
             </div>
+
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="form-floating mb-3">
+                    <span class="text-danger">Заполните все поля</span>
+                </div>
+            }
+
+            <hr />
+
             <div class="form-group">
-                <input type="submit" value="Создать заметку" class="btn btn-primary" />
+                <input type="submit" value="Создать" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-primary">Вернуться к списку</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Вернутся к списку</a>
 </div>
 
 @section Scripts {
