@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Razor;
+using ToDoList.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,7 @@ builder.Services.AddDbContext<ApplicationContext>(
     ); builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services
+    .AddTransient<IUserValidator<User>, CustomUserValidator>()
     .AddDefaultIdentity<User>()
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationContext>();

@@ -9,93 +9,93 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ToDoList
 build_property.RootNamespace = ToDoList
-build_property.ProjectDir = D:\Projects\ToDoList\
+build_property.ProjectDir = D:\Repositories\ToDoList\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Projects\ToDoList
+build_property.MSBuildProjectDirectory = D:\Repositories\ToDoList
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Projects/ToDoList/Areas/Identity/Pages/Account/Login.cshtml]
+[D:/Repositories/ToDoList/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+[D:/Repositories/ToDoList/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[D:/Repositories/ToDoList/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[D:/Repositories/ToDoList/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Areas/Identity/Pages/Account/Register.cshtml]
+[D:/Repositories/ToDoList/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[D:/Repositories/ToDoList/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[D:/Repositories/ToDoList/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Areas/Identity/Pages/_ViewImports.cshtml]
+[D:/Repositories/ToDoList/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Areas/Identity/Pages/_ViewStart.cshtml]
+[D:/Repositories/ToDoList/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Pages/_ValidationScriptsPartial.cshtml]
+[D:/Repositories/ToDoList/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Views/Shared/Error.cshtml]
+[D:/Repositories/ToDoList/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Views/Shared/_LoginPartial.cshtml]
+[D:/Repositories/ToDoList/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Repositories/ToDoList/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Views/TODOes/Create.cshtml]
+[D:/Repositories/ToDoList/Views/TODOes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVE9ET2VzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Views/TODOes/Delete.cshtml]
+[D:/Repositories/ToDoList/Views/TODOes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVE9ET2VzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Views/TODOes/Details.cshtml]
+[D:/Repositories/ToDoList/Views/TODOes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVE9ET2VzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Views/TODOes/Edit.cshtml]
+[D:/Repositories/ToDoList/Views/TODOes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVE9ET2VzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Views/TODOes/Index.cshtml]
+[D:/Repositories/ToDoList/Views/TODOes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVE9ET2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Views/_ViewImports.cshtml]
+[D:/Repositories/ToDoList/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Views/_ViewStart.cshtml]
+[D:/Repositories/ToDoList/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/ToDoList/Views/Shared/_Layout.cshtml]
+[D:/Repositories/ToDoList/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-dt7ithozdg

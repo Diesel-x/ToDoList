@@ -6,7 +6,6 @@
 
 <h1>Редактирование</h1>
 
-<h4>TODO</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -24,7 +23,7 @@
             </div>
             <div class="form-group">
                 <label class="control-label">Дата выполнения</label>
-                <input asp-for="Term" type="datetime-local" data-type="date" id="datepicker" class="form-control" name="datepicker">
+                <input asp-for="Term" type="date" value="Term" id="datepicker" class="form-control">
                 <span asp-validation-for="Term" class="text-danger"></span>
             </div>
             <div class="form-group">

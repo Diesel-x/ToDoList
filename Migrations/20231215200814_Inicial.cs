@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace Zetix.Migrations
+namespace ToDoList.Migrations
 {
     /// <inheritdoc />
     public partial class Inicial : Migration

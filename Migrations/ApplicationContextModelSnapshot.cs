@@ -8,7 +8,7 @@ using ToDoList.Data;
 
 #nullable disable
 
-namespace Zetix.Migrations
+namespace ToDoList.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
     partial class ApplicationContextModelSnapshot : ModelSnapshot

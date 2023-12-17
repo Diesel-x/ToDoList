@@ -9,10 +9,10 @@ using ToDoList.Data;
 
 #nullable disable
 
-namespace Zetix.Migrations
+namespace ToDoList.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20231214072256_Inicial")]
+    [Migration("20231215200814_Inicial")]
     partial class Inicial
     {
         /// <inheritdoc />
